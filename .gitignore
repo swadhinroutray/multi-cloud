@@ -1,0 +1,10 @@
+#aws-func
+aws-func/node_modules
+aws-func/.env
+aws-func/lambdaFunc.zip
+
+#ibm-func
+ibm-func/.env
+#root-source
+.env
+node_modules
