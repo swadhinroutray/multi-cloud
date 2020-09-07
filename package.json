@@ -4,7 +4,8 @@
   "description": "A multi cloud deployed code to get comfortable with cloud functions",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+    "start":"node index.js"
   },
   "keywords": [
     "node",
