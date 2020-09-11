@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const PORT = process.env.PORT || 8000;
 const axios = require("axios");
-
+const routes = require("./routes/routes.js");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -66,6 +66,7 @@ async function callLocal(req, res) {
   return res.send({ text: text, cloud: "Hello from Local Server!" });
 }
 
+app.use("/cloudant", routes);
 app.listen(PORT, () => {
   console.log(`Listening on Port:${PORT}`);
 });

@@ -6,5 +6,6 @@ aws-func/lambdaFunc.zip
 #ibm-func
 ibm-func/.env
 #root-source
-
+.env
 node_modules
+DBService.json
